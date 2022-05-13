@@ -1,0 +1,377 @@
+
+
+@media screen and (max-width: 859px){
+    .header .logo {
+        width: 132px;
+        height: 74px;
+    }
+    .header .arrow{
+        position: absolute;
+        bottom: 10%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        z-index: 10;
+    }
+    .header .arrow svg{
+        width: 33px;
+        height: 15px;
+        fill: #ffffff;
+    }
+    /*========.section-text========*/
+    .section-text{
+        color: #ffffff;
+        background: #303C49;
+        padding: 30px 42px 41px;
+        line-height: 1.67;
+    }
+    .section-text .wrap-section-text picture{margin: 0 0 11px;}
+    .section-text .wrap-section-text h2{margin: 0 0 44px 0;}
+    .section-text .wrap-section-text p{margin: 0 0 20px;}
+
+
+
+
+
+
+
+
+
+
+    .register h3{
+        font-size: 15px;
+        font-weight: 700;
+        color: #303C49;
+    }
+    .contact-form{
+       width: 75%;
+       margin: 0 auto;
+    }
+    .contact-form input[type='submit']{
+        width: 93px;
+        margin: 6px 0 30px;
+        line-height: 38px;
+        color: #F2F3F4;
+        background: #303C49;
+    }
+    .contact-form input{
+        width: 100%;
+        padding: 10px 0;
+        margin: 0 auto 22px;
+        text-align: center;
+    }
+    .contact-form input::-webkit-input-placeholder {
+        font: 700 12px 'Heebo', sans-serif;
+        color: #7d7d7d;
+    }
+    .contact-form input::-moz-placeholder {
+        font: 700 12px 'Heebo', sans-serif;
+        color: #7d7d7d;
+    }
+    .contact-form input:-ms-input-placeholder {
+        font: 700 12px 'Heebo', sans-serif;
+        color: #7d7d7d;
+    }
+    .contact-form input::-ms-input-placeholder {
+        font: 700 12px 'Heebo', sans-serif;
+        color: #7d7d7d;
+    }
+    .contact-form input::placeholder {
+        font: 700 12px 'Heebo', sans-serif;
+        color: #7d7d7d;
+    }
+    .contact-form input::placeholder:focus{
+        opacity: 0.3;
+    }
+    .register{
+        text-align: center;
+    }
+    .register p {
+        margin: 0 0 30px;
+        text-align: right;
+        color: #303C49;
+    }
+    .register strong{
+        color: #303C49;
+    }
+    .register strong a{
+        color: #303C49;
+    }
+
+
+    .whatsapp{
+        position: fixed;
+        top: 601px;
+        right: 16px;
+        transform: translateY(-50%);
+        width: 60px;
+        height: 60px;
+        z-index: 5;
+    }
+     .whatsapp svg{
+        width: 32px;
+        height: 32px;
+    }
+
+     .link-register-contact{
+        position: fixed;
+        top: 601px;
+        left: 0;
+        display: inline-block;
+        width: 100%;
+        padding: 21px 0 23px;
+        font-size: 15px;
+        font-weight: 700;
+        text-align: center;
+        color: #303C49;
+        background: #ffffff;
+        text-decoration: none;
+         z-index: 3;
+    }
+     .register{
+        position: relative;
+        background: #F2F3F4;
+        padding: 16px 25px 34px;
+        z-index: 10;
+    }
+
+
+    .section-products{
+        padding: 26px 0 48px;
+    }
+    .section-products{
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+     .section-products h3{font-size: 12px;}
+
+    .slick-slide {
+     width:248px;
+    }
+
+    .slider .slick-prev.slick-arrow {
+        left: 0;
+    }
+    .slider .slick-next.slick-arrow {
+        right: 0;
+    }
+    .buttons-links{padding: 35px 20px;}
+    .image-slider .buttons-links .btn{
+        display: block;
+        width: 191px;
+        padding: 11px;
+        margin: 15px auto;
+    }
+    .footer-logo {
+        padding: 36px 0;
+    }
+    .footer-social-link{
+        text-align: center;
+        padding: 37px 20px 100px;
+    }
+    .footer-social-link a{
+        display: inline-block;
+        margin: 0 10px;
+    }
+    .footer-social-link a svg{
+        fill: #303C49;
+    }
+ .footer-social-link .link-facebook svg{
+        width: 14px;
+        height: 28px;
+    }
+    .footer-social-link .link-youtube svg{
+        width: 73px;
+        height: 16px;
+        padding: 5px 0;
+    }
+    .footer-social-link .link-instagram svg{
+        width: 28px;
+        height: 28px;
+    }
+}
+
+/*==================================================================*/
+@media screen and (min-width: 860px){
+    h2{
+        font-size: 45px;
+        letter-spacing: 1.44px;
+    }
+    .header .arrow{display: none;}
+
+
+    /*========section-text=======*/
+    .section-text{
+        color: #303C49;
+        background: #F2F3F4;
+        padding: 63px 42px 73px;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 1.7;
+    }
+    .section-text .wrap-section-text picture{margin: 0 0 37px;}
+    .section-text .wrap-section-text h2{margin: 0 0 35px 0;}
+    .section-text .wrap-section-text p{margin: 0 0 22px;}
+
+
+
+
+
+     .link-register-contact{
+        display: none;
+    }
+     .whatsapp {
+        position: fixed;
+        bottom:273px;
+        right: 100px;
+        width: 109px;
+        height: 109px;
+        z-index: 5;
+    }
+    .whatsapp svg{
+        width: 45px;
+        height: 45px;
+    }
+
+    .register{
+        position: fixed;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        text-align: center;
+        padding: 22px 0;
+        background: #303C49;
+        z-index: 5;
+    }
+
+    .contact-form{
+        display: flex;
+        justify-content: center;
+        margin: 0 0 30px;
+    }
+    .contact-form input[type='submit']{
+        width: 120px;
+        margin: 0 25px;
+        color: #303C49;
+        background: #F2F3F4;
+    }
+
+    .contact-form input{
+        width: 278px;
+        padding: 13px 10px;
+        margin: 0 16px;
+    }
+    .register h3{
+        font-size: 15px;
+        font-weight: 700;
+        color: #FFFFFF;
+        margin: 0 0 20px;
+    }
+    .register p{
+        display: none;
+    }
+    .register strong{
+        color: #FFFFFF;
+    }
+    .register strong a{
+        color: #FFFFFF;
+    }
+
+    /*/////////////////////////////////////////*/
+
+    .section-products{
+        padding: 68px 0 108px;
+    }
+
+    .section-products .products{
+        max-width: 1150px;/*1427px*/
+        margin: 0 auto;
+    }
+    .product{
+       width: 248px;
+       margin:108px auto 78px;
+    }
+    .section-products h3{font-size: 15px;}
+
+    .product h4 {font-size: 13px;}
+    .product .image-holder{margin: 0 auto 66px;}
+   .product .image-holder img{width: 100%;}
+    .slider .slick-prev.slick-arrow {
+        left: 0;
+    }
+    .slider .slick-next.slick-arrow {
+        right:0;
+    }
+/*///////////////////////////////////////////////*/
+    .image-slider .buttons-links{
+        padding: 58px 30px 61px;
+
+    }
+    .image-slider .buttons-links .btn{
+        display: inline-block;
+        font-size: 15px;
+        width: 274px;
+        padding: 19px;
+        margin: 0 24px;
+    }
+    #footer{
+        background: #303C49;
+        padding: 16px 20px 105px;
+    }
+    .footer-container{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        align-items: center;
+        max-width: 1564px ;
+        margin: 0 auto;
+
+
+    }
+
+     .footer-container .footer-logo {
+        padding:0;
+    }
+     .footer-container .footer-logo a{
+        display: inline-block;
+        margin: 0 0 0 20px;
+    }
+     .footer-container a svg{
+        fill: #FFFFFF;
+    }
+    .footer-container .footer-social-link a{
+        margin: 0 17px;
+
+    }
+    .footer-social-link .link-facebook svg{
+        width: 22px;
+        height: 46px;
+    }
+    .footer-social-link .link-youtube svg{
+        width: 121px;
+        height: 27px;
+        padding: 9px 0;
+    }
+    .footer-social-link .link-instagram svg{
+        width: 46px;
+        height: 46px;
+    }
+
+}
+
+@media screen and (min-width: 1360px){
+     .register{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 22px 0;
+    }
+    .register h3{
+        margin: 0;
+    }
+.contact-form {
+    margin: 0;
+  width: 65%;
+   }
+
+}
