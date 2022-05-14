@@ -1,103 +1,58 @@
-
-
+@media screen and (max-width: 1700px){
+    .section-products .products{max-width: 900px;}
+}
 @media screen and (max-width: 859px){
+    h2{
+        font-size: 25px;
+        letter-spacing: 0.8px;
+    }
     .header .logo {
         width: 132px;
         height: 74px;
+        transform: translate(-50%, -65%);
     }
-    .header .arrow{
-        position: absolute;
-        bottom: 10%;
-        left: 50%;
-        transform: translate(-50%, 0);
-        z-index: 10;
-    }
-    .header .arrow svg{
-        width: 33px;
-        height: 15px;
-        fill: #ffffff;
-    }
+    .header .arrow{display: block;}
+    .slide .slick-dots {bottom: 2px;}
+
     /*========.section-text========*/
     .section-text{
         color: #ffffff;
         background: #303C49;
         padding: 30px 42px 41px;
-        line-height: 1.67;
     }
+    .section-text .wrap-section-text{
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1.66;}
     .section-text .wrap-section-text picture{margin: 0 0 11px;}
-    .section-text .wrap-section-text h2{margin: 0 0 44px 0;}
     .section-text .wrap-section-text p{margin: 0 0 20px;}
 
-
-
-
-
-
-
-
-
-
-    .register h3{
-        font-size: 15px;
-        font-weight: 700;
-        color: #303C49;
+    /*=======PRODUCTS========*/
+    .section-products{padding: 26px 0 34px;}
+    .section-products h3{font-size: 12px;}
+    .section-products .products{padding: 0;}
+    .section-products .slider-item .product{
+        width: 136px;
+        margin:49px 30px 45px;
     }
-    .contact-form{
-       width: 75%;
-       margin: 0 auto;
+    .section-products .slider-item .product .image-holder{margin: 0 0 39px;}
+    .slick-dots button {
+        width: 7px;
+        height: 7px;
+        padding: 1px;
     }
-    .contact-form input[type='submit']{
-        width: 93px;
-        margin: 6px 0 30px;
-        line-height: 38px;
-        color: #F2F3F4;
-        background: #303C49;
+    .slick-dots li{margin: 0 3px;}
+    /*======.image-slider=======*/
+    .image-slider .buttons-links{
+        font-size: 12px;
+        padding: 32px 23px;
     }
-    .contact-form input{
-        width: 100%;
-        padding: 10px 0;
-        margin: 0 auto 22px;
-        text-align: center;
+    .image-slider .buttons-links .btn{
+        display: block;
+        width: 191px;
+        padding: 8px 11px;
+        margin: 15px auto;
     }
-    .contact-form input::-webkit-input-placeholder {
-        font: 700 12px 'Heebo', sans-serif;
-        color: #7d7d7d;
-    }
-    .contact-form input::-moz-placeholder {
-        font: 700 12px 'Heebo', sans-serif;
-        color: #7d7d7d;
-    }
-    .contact-form input:-ms-input-placeholder {
-        font: 700 12px 'Heebo', sans-serif;
-        color: #7d7d7d;
-    }
-    .contact-form input::-ms-input-placeholder {
-        font: 700 12px 'Heebo', sans-serif;
-        color: #7d7d7d;
-    }
-    .contact-form input::placeholder {
-        font: 700 12px 'Heebo', sans-serif;
-        color: #7d7d7d;
-    }
-    .contact-form input::placeholder:focus{
-        opacity: 0.3;
-    }
-    .register{
-        text-align: center;
-    }
-    .register p {
-        margin: 0 0 30px;
-        text-align: right;
-        color: #303C49;
-    }
-    .register strong{
-        color: #303C49;
-    }
-    .register strong a{
-        color: #303C49;
-    }
-
-
     .whatsapp{
         position: fixed;
         top: 601px;
@@ -105,14 +60,13 @@
         transform: translateY(-50%);
         width: 60px;
         height: 60px;
-        z-index: 5;
     }
-     .whatsapp svg{
+    .whatsapp svg{
         width: 32px;
         height: 32px;
     }
 
-     .link-register-contact{
+    .link-register-contact{
         position: fixed;
         top: 601px;
         left: 0;
@@ -125,43 +79,93 @@
         color: #303C49;
         background: #ffffff;
         text-decoration: none;
-         z-index: 3;
+        z-index: 1003;
     }
-     .register{
+    .register{
         position: relative;
+        color: #303C49;
         background: #F2F3F4;
-        padding: 16px 25px 34px;
-        z-index: 10;
+        padding: 16px 27px 34px;
+        text-align: center;
+        z-index: 1010;
     }
-
-
-    .section-products{
-        padding: 26px 0 48px;
+    .register h3{
+        color: #303C49;
     }
-    .section-products{
-        max-width: 90%;
+    .register .contact-form-warning{
+        display: block;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1.25;
+        margin: 0 0 28px;
+        text-align: right;
+    }
+    .register strong{
+        color: #303C49;
+    }
+    .register strong a{
+        margin: 0 10px 0 0;
+        color: #303C49;
+    }
+    .register div form p{
+        display: block;
         margin: 0 auto;
     }
-
-     .section-products h3{font-size: 12px;}
-
-    .slick-slide {
-     width:248px;
+    .register div form p span input[type='tel']{
+        font-family: inherit;
+        width: calc(100% - 107px);
+        padding: 9px 30px;
+        margin: 0 auto 22px;
+        text-align: center;
+    }
+    .register div form p span input[type='text']{
+        font-family: inherit;
+        width: calc(100% - 107px);
+        padding: 9px 30px;
+        margin: 0 auto 22px;
+        text-align: center;
+    }
+    .register div form p span input[type='email']{
+        font-family: inherit;
+        width: calc(100% - 107px);
+        padding: 9px 30px;
+        margin: 0 auto 22px;
+        text-align: center;
     }
 
-    .slider .slick-prev.slick-arrow {
-        left: 0;
+    .register div form p input[type='submit']{
+        width: 93px;
+        margin: 30px auto 10px;
+        font-family: inherit;
+        line-height: 30px;
+        color: #F2F3F4;
+        background: #303C49;
     }
-    .slider .slick-next.slick-arrow {
-        right: 0;
+
+    .register div form p span input::-webkit-input-placeholder {
+        font: 700 12px 'Heebo', sans-serif;
+        color: #7d7d7d;
     }
-    .buttons-links{padding: 35px 20px;}
-    .image-slider .buttons-links .btn{
-        display: block;
-        width: 191px;
-        padding: 11px;
-        margin: 15px auto;
+    .register div form p span input::-moz-placeholder {
+        font: 700 12px 'Heebo', sans-serif;
+        color: #7d7d7d;
     }
+    .register div form p span input:-ms-input-placeholder {
+        font: 700 12px 'Heebo', sans-serif;
+        color: #7d7d7d;
+    }
+    .register div form p span input::-ms-input-placeholder {
+        font: 700 12px 'Heebo', sans-serif;
+        color: #7d7d7d;
+    }
+    .register div form p span input::placeholder {
+        font: 700 12px 'Heebo', sans-serif;
+        color: #7d7d7d;
+    }
+    .register div form p span input::placeholder:focus{
+        opacity: 0.3;
+    }
+
     .footer-logo {
         padding: 36px 0;
     }
@@ -176,7 +180,7 @@
     .footer-social-link a svg{
         fill: #303C49;
     }
- .footer-social-link .link-facebook svg{
+    .footer-social-link .link-facebook svg{
         width: 14px;
         height: 28px;
     }
@@ -190,153 +194,27 @@
         height: 28px;
     }
 }
-
-/*==================================================================*/
 @media screen and (min-width: 860px){
-    h2{
-        font-size: 45px;
-        letter-spacing: 1.44px;
-    }
-    .header .arrow{display: none;}
-
-
-    /*========section-text=======*/
-    .section-text{
-        color: #303C49;
-        background: #F2F3F4;
-        padding: 63px 42px 73px;
-        font-size: 13px;
-        font-weight: 500;
-        line-height: 1.7;
-    }
-    .section-text .wrap-section-text picture{margin: 0 0 37px;}
-    .section-text .wrap-section-text h2{margin: 0 0 35px 0;}
-    .section-text .wrap-section-text p{margin: 0 0 22px;}
-
-
-
-
-
-     .link-register-contact{
-        display: none;
-    }
-     .whatsapp {
-        position: fixed;
-        bottom:273px;
-        right: 100px;
-        width: 109px;
-        height: 109px;
-        z-index: 5;
-    }
-    .whatsapp svg{
-        width: 45px;
-        height: 45px;
-    }
-
-    .register{
-        position: fixed;
-        width: 100%;
-        left: 0;
-        bottom: 0;
-        text-align: center;
-        padding: 22px 0;
-        background: #303C49;
-        z-index: 5;
-    }
-
-    .contact-form{
-        display: flex;
-        justify-content: center;
-        margin: 0 0 30px;
-    }
-    .contact-form input[type='submit']{
-        width: 120px;
-        margin: 0 25px;
-        color: #303C49;
-        background: #F2F3F4;
-    }
-
-    .contact-form input{
-        width: 278px;
-        padding: 13px 10px;
-        margin: 0 16px;
-    }
-    .register h3{
-        font-size: 15px;
-        font-weight: 700;
-        color: #FFFFFF;
-        margin: 0 0 20px;
-    }
-    .register p{
-        display: none;
-    }
-    .register strong{
-        color: #FFFFFF;
-    }
-    .register strong a{
-        color: #FFFFFF;
-    }
-
-    /*/////////////////////////////////////////*/
-
-    .section-products{
-        padding: 68px 0 108px;
-    }
-
-    .section-products .products{
-        max-width: 1150px;/*1427px*/
-        margin: 0 auto;
-    }
-    .product{
-       width: 248px;
-       margin:108px auto 78px;
-    }
-    .section-products h3{font-size: 15px;}
-
-    .product h4 {font-size: 13px;}
-    .product .image-holder{margin: 0 auto 66px;}
-   .product .image-holder img{width: 100%;}
-    .slider .slick-prev.slick-arrow {
-        left: 0;
-    }
-    .slider .slick-next.slick-arrow {
-        right:0;
-    }
-/*///////////////////////////////////////////////*/
-    .image-slider .buttons-links{
-        padding: 58px 30px 61px;
-
-    }
-    .image-slider .buttons-links .btn{
-        display: inline-block;
-        font-size: 15px;
-        width: 274px;
-        padding: 19px;
-        margin: 0 24px;
-    }
     #footer{
         background: #303C49;
-        padding: 16px 20px 105px;
+        padding: 20px 20px 181px;
     }
     .footer-container{
         display: flex;
         justify-content: space-between;
         flex-direction: row-reverse;
         align-items: center;
-        max-width: 1564px ;
+        max-width: 1617px ;
         margin: 0 auto;
-
-
     }
-
-     .footer-container .footer-logo {
+    .footer-container .footer-logo {
+        margin: 0 0 0 53px;
         padding:0;
     }
-     .footer-container .footer-logo a{
+    .footer-container .footer-logo a{
         display: inline-block;
-        margin: 0 0 0 20px;
     }
-     .footer-container a svg{
+    .footer-container a svg{
         fill: #FFFFFF;
     }
     .footer-container .footer-social-link a{
@@ -356,11 +234,12 @@
         width: 46px;
         height: 46px;
     }
-
 }
-
 @media screen and (min-width: 1360px){
-     .register{
+    #footer{
+        padding: 20px 20px 105px;
+    }
+    .register{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -369,9 +248,8 @@
     .register h3{
         margin: 0;
     }
-.contact-form {
-    margin: 0;
-  width: 65%;
-   }
-
+    .register div form p{
+        margin: 0 29px 0 0;
+      /*  width: 65%;*/
+    }
 }

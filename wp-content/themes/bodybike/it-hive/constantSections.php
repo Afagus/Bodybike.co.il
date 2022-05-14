@@ -19,12 +19,16 @@ const POSTER = [
     'image' => [
         'type' => 'image',
         'label' => 'Poster',
-    ],
-    'mobileImage' => [
-        'type' => 'image',
-        'label' => 'Poster (mobile)',
     ]
+ ];
+
+const POSTER_MOBILE = [
+	'mobileImage' => [
+		'type' => 'image',
+		'label' => 'Poster (mobile)',
+	]
 ];
+
 const TITLE = [
     'title' => [
         'type' => 'text',
@@ -65,6 +69,12 @@ const LINK = [
     'link' => [
         'type' => 'text',
         'label' => 'Link',
+    ],
+];
+const LOGO_LINK = [
+    'link' => [
+        'type' => 'text',
+        'label' => 'Logo link',
     ],
 ];
 const BUTTON = [
