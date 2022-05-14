@@ -1,0 +1,12 @@
+.ui-selectmenu-menu .ui-state-active {
+    position: initial;
+}
+.repeater-container span.tooltip {
+    display: none!important;
+}
+.repeater-container .ui-state-active span.tooltip {
+    display: block;
+}
+.repeater-container .ui-selectmenu-button.ui-button {
+    width: 25%;
+}

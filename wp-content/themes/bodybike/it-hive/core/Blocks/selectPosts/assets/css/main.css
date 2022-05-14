@@ -1,0 +1,38 @@
+.it-hive-autocomplete{
+	position: relative;
+}
+.it-hive-autocomplete .autocomplete-items{
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 2em;
+	background: white;
+	padding: 4px;
+}
+.it-hive-autocomplete .autocomplete-items.show{
+	display: block;
+}
+.it-hive-autocomplete .autocomplete-items a{
+	display: block;
+	/*border-bottom: 1px solid black;*/
+	padding: 5px 0;
+	text-decoration: none;
+}
+
+.it-hive-autocomplete > input {
+    width: auto;
+    clear: both;
+    /*float: right;*/
+	width: 50%;
+}
+
+.it-hive-autocomplete .autocomplete-items {
+    /*float: right;*/
+    position: static;
+    clear: both;
+    width: auto;
+}
+
+.select-posts.item {
+    overflow: hidden;
+}

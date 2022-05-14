@@ -1,0 +1,18 @@
+.ui-timepicker-list{
+    border: 1px solid black;
+    background: white;
+}
+.ui-timepicker-list li{
+    padding: 2px 6px;
+    margin: 0 2px;
+    cursor: pointer;
+}
+.ui-timepicker-list li:hover{
+    background: #f1f1f1;;
+}
+.ui-timepicker-disabled{
+    color: #bebebe;
+}
+.ui-timepicker-selected{
+    border: 1px solid #0073aa;
+}
