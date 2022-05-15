@@ -14,7 +14,7 @@
     .header .arrow{display: block;}
     .slide .slick-dots {bottom: 2px;}
 
-    /*========.section-text========*/
+/* section-text */
     .section-text{
         color: #ffffff;
         background: #303C49;
@@ -26,8 +26,7 @@
         line-height: 1.66;}
     .section-text .wrap-section-text picture{margin: 0 0 11px;}
     .section-text .wrap-section-text p{margin: 0 0 20px;}
-
-    /*=======PRODUCTS========*/
+/* PRODUCTS */
     .section-products{padding: 26px 0 34px;}
     .section-products h3{font-size: 12px;}
     .section-products .products{padding: 0;}
@@ -42,7 +41,7 @@
         padding: 1px;
     }
     .slick-dots li{margin: 0 3px;}
-    /*======.image-slider=======*/
+/* image-slider */
     .image-slider .buttons-links{
         font-size: 12px;
         padding: 32px 23px;
@@ -79,7 +78,7 @@
         color: #303C49;
         background: #ffffff;
         text-decoration: none;
-        z-index: 1003;
+        z-index: 1009;
     }
     .register{
         position: relative;
@@ -111,58 +110,48 @@
         display: block;
         margin: 0 auto;
     }
-    .register div form p span input[type='tel']{
+    .register form p .wpcf7-form-control-wrap{
+        margin: 0;
+    }
+    .register input[type='tel'],
+    .register input[type='text'],
+    .register input[type='email']{
         font-family: inherit;
         width: calc(100% - 107px);
-        padding: 9px 30px;
+        padding: 6px 30px;
         margin: 0 auto 22px;
         text-align: center;
     }
-    .register div form p span input[type='text']{
-        font-family: inherit;
-        width: calc(100% - 107px);
-        padding: 9px 30px;
-        margin: 0 auto 22px;
-        text-align: center;
-    }
-    .register div form p span input[type='email']{
-        font-family: inherit;
-        width: calc(100% - 107px);
-        padding: 9px 30px;
-        margin: 0 auto 22px;
-        text-align: center;
-    }
-
-    .register div form p input[type='submit']{
+    .register input[type='submit']{
         width: 93px;
-        margin: 30px auto 10px;
+        margin: 7px auto 32px;
         font-family: inherit;
         line-height: 30px;
         color: #F2F3F4;
         background: #303C49;
     }
 
-    .register div form p span input::-webkit-input-placeholder {
+    .register input::-webkit-input-placeholder {
         font: 700 12px 'Heebo', sans-serif;
         color: #7d7d7d;
     }
-    .register div form p span input::-moz-placeholder {
+    .register input::-moz-placeholder {
         font: 700 12px 'Heebo', sans-serif;
         color: #7d7d7d;
     }
-    .register div form p span input:-ms-input-placeholder {
+    .register input:-ms-input-placeholder {
         font: 700 12px 'Heebo', sans-serif;
         color: #7d7d7d;
     }
-    .register div form p span input::-ms-input-placeholder {
+    .register input::-ms-input-placeholder {
         font: 700 12px 'Heebo', sans-serif;
         color: #7d7d7d;
     }
-    .register div form p span input::placeholder {
+    .register input::placeholder {
         font: 700 12px 'Heebo', sans-serif;
         color: #7d7d7d;
     }
-    .register div form p span input::placeholder:focus{
+    .register input::placeholder:focus{
         opacity: 0.3;
     }
 
@@ -195,6 +184,12 @@
     }
 }
 @media screen and (min-width: 860px){
+    .whatsapp {
+        width: 74px;
+        height: 74px;
+        bottom: 270px;
+        right: 14px;
+    }
     #footer{
         background: #303C49;
         padding: 20px 20px 181px;
@@ -236,9 +231,15 @@
     }
 }
 @media screen and (min-width: 1360px){
-    #footer{
-        padding: 20px 20px 105px;
+    .whatsapp {
+        position: fixed;
+        bottom:256px;
+        right: 100px;
+        width: 109px;
+        height: 109px;
     }
+}
+@media screen and (min-width: 1660px){
     .register{
         display: flex;
         justify-content: center;
@@ -249,7 +250,10 @@
         margin: 0;
     }
     .register div form p{
-        margin: 0 29px 0 0;
-      /*  width: 65%;*/
+        margin: 0 46px 0 31px;
     }
+    #footer{
+        padding: 18px 20px 105px;
+    }
+
 }

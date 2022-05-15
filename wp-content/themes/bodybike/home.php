@@ -117,20 +117,6 @@ Template Name: home
             </svg>
         </a>
         <a class="link-register-contact" href="#register">הרשמו ונחזור אליכם > ></a>
-        <div id="register" class="register">
-            <h3>הרשמו ונחזור אליכם</h3>
-
-
-
-
-
-                <?php echo do_shortcode('[contact-form-7 id="96" title="טופס יצירת קשר"]'); ?>
-           <p class="contact-form-warning">* בעת השארת הפרטים הנך מאשר/ת קבלת דיוורים ודואר פרסומי,<br> ומודע/ת לכך שבכל רגע תוכל/י להסיר את עצמך
-                מהרשימה.</p>
-            <strong> או חייגו אלינו:<a href="tel:0772311387">077.2311387</a></strong>
-        </div>
-    </main>
-
 <?php get_footer() ?>
 
 

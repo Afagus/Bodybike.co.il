@@ -1,4 +1,14 @@
 <?php $options = get_option('options', null); ?>
+<div id="register" class="register">
+    <h3>הרשמו ונחזור אליכם</h3>
+
+	<?php echo do_shortcode('[contact-form-7 id="96" title="טופס יצירת קשר"]'); ?>
+    <p class="contact-form-warning">* בעת השארת הפרטים הנך מאשר/ת קבלת דיוורים ודואר פרסומי,<br> ומודע/ת לכך שבכל רגע תוכל/י להסיר את עצמך
+        מהרשימה.</p>
+    <strong><?=($options['headcontact']['phone_text']);?>:<a href="tel:<?=($options['headcontact']['phone_db']);?>"><?=($options['headcontact']['phone']);?></a></strong>
+
+</div>
+</main>
 <footer id="footer">
 	<div class="footer-container">
 		<div class="footer-logo">

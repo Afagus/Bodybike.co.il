@@ -48,6 +48,7 @@ THEME::addOptionsPage('main');
 THEME::addOptionsPage('team');
 
 
+
 THEME::addTaxonomy('team_category', 'category', 'Categories', 'team', [], ['rewrite' => ['slug' => 'team-category']]);
 
 THEME::addPostType('team', 'team', [], ['supports' => ['title', 'editor', 'thumbnail', 'revisions'], 'query_var' => false]);

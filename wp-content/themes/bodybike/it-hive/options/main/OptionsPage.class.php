@@ -35,10 +35,6 @@ class OptionsPage extends \it_hive\core\AdminBox\OptionsPage {
 		'save_text'  => 'Save',
 		'content'    => '',
 		'single'     => true,
-		'soc'        => [
-			'type'  => 'group',
-			'label' => 'Social links'
-		],
 		'children'   => [
 			'options' => [
 				'type' => 'tabs',
@@ -61,7 +57,7 @@ class OptionsPage extends \it_hive\core\AdminBox\OptionsPage {
 						],
 
 
-						'socials'     => [
+						'socials' => [
 							'type'     => 'group',
 							'label'    => 'Social',
 							'children' => [
@@ -81,31 +77,35 @@ class OptionsPage extends \it_hive\core\AdminBox\OptionsPage {
 								],
 							],
 						],
-						'offices'     => [
-							'type'              => 'repeater',
-							'sortable'          => true,
-							'repeatHeading'     => 'Address',
-							'repeatHeadingFrom' => 'address',
-							'repeatSkin'        => 'slideToggleWithoutHeading',
-							'addText'           => 'Add new address',
-							'removeText'        => 'Remove address',
-							'limit'             => 3,
-							'repeat'            => TITLE + ADDRESS,
-						],
+
 						'headcontact' => [
 							'type'     => 'group',
-							'label'    => 'The address that is displayed in the contact block',
-							'children' => ADDRESS,
+							'label'    => 'Add phone in contact form block',
+							'children' => [
+								'phone_text' =>[
+									'type' => 'text',
+									'label' => 'Phone block text'
+								],
+								'phone' => [
+									'type'  => 'text',
+									'label' => 'Phone number (display)'
+								],
+								'phone_db' => [
+									'type'  => 'text',
+									'label' => 'Phone number (database)'
+								],
+
+							],
+],
+
 						],
-
 					],
+
+
 				],
-
-
 			],
-		],
 
-	];
+		];
 
 	protected static $adminScripts = [
 		'options-js' => 'main.js'

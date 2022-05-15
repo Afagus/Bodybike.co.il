@@ -22,7 +22,7 @@ h2{
     max-width: 1920px;
     margin: 0 auto;
 }
-/*=========header=========*/
+/* header */
 .header{
     position: relative;
     text-align: center;
@@ -48,7 +48,7 @@ h2{
     width: 297px;
     height: 166px;
     transform: translate(-50%, -50%);
-    z-index: 1000;
+    z-index: 1003;
 }
 .header .logo img{
     width: 100%;
@@ -68,7 +68,7 @@ h2{
 }
 .header .top-slider{position: relative;}
 
-/*====styles for all sliders====*/
+/* styles for all sliders */
 .slick-dots {
     display: flex;
     align-items: center;
@@ -108,7 +108,7 @@ h2{
     z-index: 1000;
 }
 
-/*=====product slider slide========*/
+/* product slider slide */
 .slider .slider-item {
     text-align: center;
     min-width: 0;
@@ -132,11 +132,11 @@ h2{
 }
 .slider .slick-dots button {background: #303C49;}
 .slider .slick-dots li.slick-active button {border: solid 2px #303C49;}
-/*===image-slider slide====*/
+/* image-slider slide */
 .wrap-image-slider{
     position: relative;
 }
-/*==section-text==*/
+/* section-text */
 .section-text{
     color: #303C49;
     background: #F2F3F4;
@@ -155,7 +155,7 @@ h2{
 .section-text .wrap-section-text h2{margin: 0 0 45px 0;}
 .section-text .wrap-section-text p{margin: 0 0 22px;}
 
-/*=======PRODUCTS========*/
+/* PRODUCTS */
 .section-products{
     padding: 68px 0 108px;
     text-align: center;
@@ -187,7 +187,7 @@ h2{
 .slider .slick-prev.slick-arrow{left: 0;}
 .slider .slick-next.slick-arrow {right:0;}
 
-/*======.image-slider=======*/
+/* image-slider */
 .image-slider picture{background: #303C49;}
 .image-slider picture img{width: 100%;}
 .image-slider .buttons-links{
@@ -227,16 +227,12 @@ h2{
 }
 .whatsapp {
     position: fixed;
-    bottom:256px;
-    right: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 109px;
-    height: 109px;
     background: #485564;
     border-radius: 50%;
-    z-index: 1005;
+    z-index: 1012;
     transition: all 250ms linear;
 
 }
@@ -284,49 +280,27 @@ h2{
     display: flex;
     justify-content: center;
     flex-direction: row-reverse;
-    width: 100%;
     margin: 0 auto 30px;
 }
-.register div form p .wpcf7-form-control-wrap{
-    margin: 0 18px;
+.register form p .wpcf7-form-control-wrap{
+    margin: 0 11px;
 }
-.register div form p span input[type='tel']{
+.register input[type='tel'],
+.register input[type='text'],
+.register input[type='email']{
     display: block;
-    width:100%;
-    padding: 13px 10px;
+    width:95.8%;
+    padding: 11px 10px;
     font-family: inherit;
     text-transform: uppercase;
-    direction: rtl;
     background: #fafafa;
     border: none;
     box-sizing: border-box;
 }
-.register div form p span input[type='text']{
-    display: block;
-    width:100%;
-    padding: 13px 10px;
-    font-family: inherit;
-    text-transform: uppercase;
-    direction: rtl;
-    background: #fafafa;
-    border: none;
-    box-sizing: border-box;
-}
-.register div form p span input[type='email']{
-    display: block;
-    padding: 13px 10px;
-    width:100%;
-    font-family: inherit;
-    text-transform: uppercase;
-    direction: rtl;
-    background: #fafafa;
-    border: none;
-    box-sizing: border-box;
-}
-.register div form p input[type='submit']{
+.register input[type='submit']{
     width: 120px;
-    padding: 1px 10px;
-    margin: 0 34px 0 5px;
+    padding: 1px 9px;
+    margin: 0 40px;
     font-family: inherit;
     font-size: 15px;
     font-weight: 700;
@@ -338,26 +312,19 @@ h2{
     -webkit-appearance: none;
     transition: all 250ms linear;
 }
-.register div form p input[type='submit']:hover{
+.register input[type='submit']:hover{
     border: solid 1px #F2F3F4;
     color: #F2F3F4;
     background: #485564;
     transition: all 250ms linear;
 }
-.register div form p span input:focus::placeholder{
+.register .wpcf7-spinner{
+    display: none;
+}
+.register input:focus::placeholder{
     opacity: 0.3;
 }
-/*    transform: scale(1.05);
-    transition: all 250ms linear;*/
-/*.contact-form input{
-    color: #212529;
-    background-color: #fff;
-    border-color: #bdbdbd;
-    outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
-}*/
 
-/*=======================*/
 .footer-logo{
     text-align: center;
     background: #303C49;
