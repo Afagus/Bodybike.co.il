@@ -13,7 +13,7 @@ body {
 }
 
 h1, h2, h3, h4{text-transform: uppercase;}
-h2{
+h1, h2{
     font: 400 45px 'Antonio', Arial sans-serif;
     letter-spacing: 1.44px;
 }
@@ -88,6 +88,7 @@ h2{
 }
 .slick-dots button {
     background: #FFFFFF;
+    cursor: pointer;
 }
 .slick-dots li.slick-active button {
     border:  solid 2px #FFFFFF;
@@ -121,6 +122,7 @@ h2{
     width: 12px;
     height: 22px;
     border: none;
+    cursor: pointer;
     z-index: 3;
 }
 .slider .slick-arrow.slick-disabled {opacity: 0.3;}
@@ -152,7 +154,7 @@ h2{
     display: inline-block;
     margin: 0 0 37px;
 }
-.section-text .wrap-section-text h2{margin: 0 0 45px 0;}
+.section-text .wrap-section-text h1{margin: 0 0 45px 0;}
 .section-text .wrap-section-text p{margin: 0 0 22px;}
 
 /* PRODUCTS */
@@ -279,7 +281,6 @@ h2{
 .register div form p{
     display: flex;
     justify-content: center;
-    flex-direction: row-reverse;
     margin: 0 auto 30px;
 }
 .register form p .wpcf7-form-control-wrap{
@@ -296,6 +297,10 @@ h2{
     background: #fafafa;
     border: none;
     box-sizing: border-box;
+}
+.register input[type='tel'],
+.register input[type='email']{
+    text-align: end;
 }
 .register input[type='submit']{
     width: 120px;

@@ -2,7 +2,7 @@
     .section-products .products{max-width: 900px;}
 }
 @media screen and (max-width: 859px){
-    h2{
+    h1, h2{
         font-size: 25px;
         letter-spacing: 0.8px;
     }

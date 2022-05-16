@@ -6,7 +6,6 @@
 <!--    <title>--><?php //echo wp_get_document_title(); ?><!--</title>-->
 
     <?php wp_head();?>
-
 </head>
 <body dir="rtl">
 <header class="header">

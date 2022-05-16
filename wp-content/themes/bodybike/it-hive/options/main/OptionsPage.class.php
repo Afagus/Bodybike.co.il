@@ -82,37 +82,29 @@ class OptionsPage extends \it_hive\core\AdminBox\OptionsPage {
 							'type'     => 'group',
 							'label'    => 'Add phone in contact form block',
 							'children' => [
-								'phone_text' =>[
-									'type' => 'text',
+								'phone_text' => [
+									'type'  => 'text',
 									'label' => 'Phone block text'
 								],
-								'phone' => [
+								'phone'      => [
 									'type'  => 'text',
 									'label' => 'Phone number (display)'
 								],
-								'phone_db' => [
+								'phone_db'   => [
 									'type'  => 'text',
 									'label' => 'Phone number (database)'
 								],
 
 							],
-],
-
 						],
+
 					],
-
-
 				],
+
+
 			],
+		],
 
-		];
-
-	protected static $adminScripts = [
-		'options-js' => 'main.js'
-	];
-
-	protected static $adminStyles = [
-		'jquery-ui-css' => 'jquery-ui.css'
 	];
 
 	public function __construct( $params = [] ) {

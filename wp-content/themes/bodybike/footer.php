@@ -1,7 +1,7 @@
-<?php $options = get_option('options', null); ?>
+<?php $options = get_option('options', null);?>
+
 <div id="register" class="register">
     <h3>הרשמו ונחזור אליכם</h3>
-
 	<?php echo do_shortcode('[contact-form-7 id="96" title="טופס יצירת קשר"]'); ?>
     <p class="contact-form-warning">* בעת השארת הפרטים הנך מאשר/ת קבלת דיוורים ודואר פרסומי,<br> ומודע/ת לכך שבכל רגע תוכל/י להסיר את עצמך
         מהרשימה.</p>
