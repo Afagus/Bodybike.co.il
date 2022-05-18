@@ -5,107 +5,57 @@ Template Name: home
 ?>
 
 <?php get_header() ?>
-
+<?php $content = get_post_meta( get_the_ID(), 'box', true ); ?>
 <main class="main">
     <section class="section-text">
         <div class="wrap-section-text">
             <picture>
-                <source srcset="<?php bloginfo( 'template_url' ); ?>/assets/images/small-logo.svg"
+                <source srcset="<?= wp_get_attachment_image_url( $content['aboutLogo']['mobileImage'], 'large' ); ?>"
                         media="(max-width:859px)">
-                <img src="<?php bloginfo( 'template_url' ); ?>/assets/images/grey-logo.svg" alt="Body Bike"/>
+                <img src="<?= wp_get_attachment_image_url( $content['aboutLogo']['image'], 'large' ); ?>"
+                     alt="Body Bike"/>
             </picture>
 			<?php while ( have_posts() ) {
 				the_post();
-				echo '<h2>';
+				echo '<h1>';
 				the_title();
-				echo '</h2>';
+				echo '</h1>';
 				the_content();
-			}; ?>
-
+			} ?>
         </div>
     </section>
     <section class="section-products">
         <h3>BODY BIKE</h3>
-        <h2>PRODUCTS</h2>
+        <h1>PRODUCTS</h1>
         <div class="products slider">
 			<?php
-			global $post;
-			$myposts = get_posts( [
-				'numberposts' => 5,
-				'offset'      => 1,
-				'category'    => 1
-			] );
-
-			if ( $myposts ) {
-				foreach ( $myposts as $post ) {
-					setup_postdata( $post );
-					?>
-                    <div class="slider-item">
-                        <div class="product">
-                            <div class="image-holder"><img
-                                        src="<?php bloginfo( 'template_url' ); ?>/assets/images/image1.png"
-                                        alt="Body Bike"></div>
-                            <h4>body bike</h4>
+			foreach ( $content['productsCarousel'] as $product ):?>
+                <div class="slider-item">
+                    <div class="product">
+                        <div class="image-holder">
+							<?= wp_get_attachment_image( $product['image'], 'large' ); ?>
                         </div>
+                        <h4><?= $product['title']?></h4>
                     </div>
-					<?php
-				}
-			} else {
-				// Постов не найдено
-			}
-
-			wp_reset_postdata(); // Сбрасываем $post
-			?>
-
-
-            <div class="slider-item">
-                <div class="product">
-                    <div class="image-holder"><img src="<?php bloginfo( 'template_url' ); ?>/assets/images/image2.png"
-                                                   alt="Body Bike"></div>
-                    <span>body bike</span>
                 </div>
-            </div>
-            <div class="slider-item">
-                <div class="product">
-                    <div class="image-holder"><img src="<?php bloginfo( 'template_url' ); ?>/assets/images/image3.png"
-                                                   alt="Body Bike"></div>
-                    <span>body bike</span>
-                </div>
-            </div>
-            <div class="slider-item">
-                <div class="product">
-                    <div class="image-holder"><img src="<?php bloginfo( 'template_url' ); ?>/assets/images/image1.png"
-                                                   alt="Body Bike"></div>
-                    <h4>body bike</h4>
-                </div>
-            </div>
-            <div class="slider-item">
-                <div class="product">
-                    <div class="image-holder"><img src="<?php bloginfo( 'template_url' ); ?>/assets/images/image2.png"
-                                                   alt="Body Bike"></div>
-                    <span>body bike</span>
-                </div>
-            </div>
-            <div class="slider-item">
-                <div class="product">
-                    <div class="image-holder"><img src="<?php bloginfo( 'template_url' ); ?>/assets/images/image3.png"
-                                                   alt="Body Bike"></div>
-                    <span>body bike</span>
-                </div>
-            </div>
+			<?php endforeach; ?>
         </div>
     </section>
     <section class="image-slider">
         <div class="wrap-image-slider">
-            <div class="slide">
-                <picture>
-                    <source srcset="<?php bloginfo( 'template_url' ); ?>/assets/images/mob-bodybike.png"
-                            media="(max-width:859px)">
-                    <img src="<?php bloginfo( 'template_url' ); ?>/assets/images/desktop-bodybike@2x.png"
-                         alt="Body Bike"/>
-                </picture>
-            </div>
+			<?php $content = get_post_meta( get_the_ID(), 'box', true ) ?>
+			<?php foreach ( $content['footPoster'] as $slide ): ?>
+                <div class="slide">
+                    <picture>
+                        <source srcset="<?php echo wp_get_attachment_image_url( $slide['mobileImage'], 'medium' ); ?>"
+                                media="(max-width:859px)">
+                        <img src="<?php echo wp_get_attachment_image_url( $slide['image'], 'large' ); ?>"
+                             alt="Body Bike"/>
+                    </picture>
+                </div>
+			<?php endforeach; ?>
         </div>
+
         <div class="buttons-links">
             <a class="btn" target="_blank" href="#">לאתר הרשמי של BODY BIKE</a>
             <a class="btn dark" target="_blank" href="#">לאתר היבואן ומותגים נוספים >></a>

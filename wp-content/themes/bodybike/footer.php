@@ -12,8 +12,8 @@
 <footer id="footer">
 	<div class="footer-container">
 		<div class="footer-logo">
-			<a href="#">
-				<picture><source srcset="<?php bloginfo('template_url');?>/assets/images/small-fitop-logo.svg" media="(min-width: 860px)"/><img src="images/fitop-logo.svg" alt="Fitop" /></picture>
+			<a href="http://<?= $options['uploadLogoFooter']['link']?>">
+				<picture><source srcset="<?= wp_get_attachment_image_url( $options['uploadLogoFooter']['image'], 'medium'); ?>" media="(min-width: 860px)"/><img src="<?= wp_get_attachment_image_url( $options['uploadLogoFooter']['mobileImage'], 'medium'); ?>" alt="Fitop" /></picture>
 			</a>
 		</div>
 		<div class="footer-social-link" >

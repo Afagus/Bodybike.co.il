@@ -10,59 +10,46 @@ class MetaBox extends \it_hive\core\AdminBox\MetaBox {
 		'name'     => 'box',
 		'single'   => true,
 		'children' => [
-			'headPoster'=> [
-				'type'     => 'group',
-				'label'    => 'HEAD POSTER',
-				'skin'     => 'slideToggleWithoutRemove',
-				'children' =>[
-					'blocks' => [
-						'type'              => 'repeater',
-						'sortable'          => true,
-						'repeatHeading'     => 'Item',
-						'repeatHeadingFrom' => 'title',
-						'repeatSkin'        => 'slideToggleWithoutHeading',
-						'addText'           => 'Add Poster',
-						'removeText'        => 'Remove Poster',
-						'repeat'            => POSTER,
-					],
-				]
+			'headerPoster'     => [
+				'type'              => 'repeater',
+				'label'             => 'HEADER SLIDER',
+				'sortable'          => true,
+				'repeatHeading'     => 'Slider',
+				'repeatHeadingFrom' => 'title',
+				'repeatSkin'        => 'slideToggleWithoutHeading',
+				'addText'           => 'Add Poster',
+				'removeText'        => 'Remove Poster',
+				'repeat'            => POSTER + POSTER_MOBILE
 			],
-			'footPoster'=> [
+			'aboutLogo'       => [
 				'type'     => 'group',
-				'label'    => 'FOOTER POSTER',
-				'skin'     => 'slideToggleWithoutRemove',
-				'children' =>[
-					'blocks' => [
-						'type'              => 'repeater',
-						'sortable'          => true,
-						'repeatHeading'     => 'Item',
-						'repeatHeadingFrom' => 'title',
-						'repeatSkin'        => 'slideToggleWithoutHeading',
-						'addText'           => 'Add Poster',
-						'removeText'        => 'Remove Poster',
-						'repeat'            => POSTER,
-					],
-				]
+				'label'    => 'ABOUT LOGO',
+				'children' => POSTER + POSTER_MOBILE,
+
 			],
-			'productsCarousel'=> [
-				'type'     => 'group',
-				'label'    => 'PRODUCTS',
-				'skin'     => 'slideToggleWithoutRemove',
-				'children' =>[
-					'blocks' => [
-						'type'              => 'repeater',
-						'sortable'          => true,
-						'repeatHeading'     => 'Product Item',
-						'repeatHeadingFrom' => 'title',
-						'repeatSkin'        => 'slideToggleWithoutHeading',
-						'addText'           => 'Add Poster',
-						'removeText'        => 'Remove Poster',
-						'repeat'            => POSTER,TITLE
-					],
-				]
+			'productsCarousel' => [
+				'type'              => 'repeater',
+				'label'             => 'PRODUCTS',
+				'sortable'          => true,
+				'repeatHeading'     => 'Item',
+				'repeatHeadingFrom' => 'title',
+				'repeatSkin'        => 'slideToggleWithoutHeading',
+				'addText'           => 'Add Poster',
+				'removeText'        => 'Remove Poster',
+				'repeat'            => POSTER + TITLE + LINK,
+			],
+			'footPoster'       => [
+				'type'              => 'repeater',
+				'label'             => 'FOOTER POSTER',
+				'sortable'          => true,
+				'repeatHeading'     => 'Slider',
+				'repeatHeadingFrom' => 'title',
+				'repeatSkin'        => 'slideToggleWithoutHeading',
+				'addText'           => 'Add Poster',
+				'removeText'        => 'Remove Poster',
+				'repeat'            => POSTER + POSTER_MOBILE
 			],
 		],
-
 	];
 
 	public function __construct( $params = [] ) {

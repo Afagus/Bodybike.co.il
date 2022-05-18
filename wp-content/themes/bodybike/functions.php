@@ -2,6 +2,17 @@
 
 use it_hive\THEME;
 
+/**
+ * Remove empty paragraphs created by wpautop()
+ */
+function remove_empty_p( $content ) {
+	$content = force_balance_tags( $content );
+	$content = preg_replace( '#<p>\s*+(<br\s*/*>)?\s*</p>#i', '', $content );
+	$content = preg_replace( '~\s?<p>(\s|&nbsp;)+</p>\s?~', '', $content );
+	return $content;
+}
+add_filter('the_content', 'remove_empty_p', 20, 1);
+
 /** Display ALL Errors */
 //ini_set( 'error_reporting', E_ALL );
 //ini_set( 'display_errors', 1 );

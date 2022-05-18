@@ -31,7 +31,7 @@ class OptionsPage extends \it_hive\core\AdminBox\OptionsPage {
 	protected $params = [
 		'name'       => 'options',
 		'title'      => 'Block settings',
-		'menu_title' => ' כלליו',
+		'menu_title' => ' הגדרות כלליות',
 		'save_text'  => 'Save',
 		'content'    => '',
 		'single'     => true,
@@ -41,7 +41,7 @@ class OptionsPage extends \it_hive\core\AdminBox\OptionsPage {
 				'tabs' => [
 
 					'general' => [
-						'uploadPhoto' => [
+						'uploadLogoHeader' => [
 							'type'     => 'group',
 							'label'    => 'Logo',
 							'children' => POSTER + LOGO_LINK,
@@ -50,10 +50,10 @@ class OptionsPage extends \it_hive\core\AdminBox\OptionsPage {
 					],
 
 					'footer ' => [
-						'uploadPhoto' => [
+						'uploadLogoFooter' => [
 							'type'     => 'group',
 							'label'    => 'Logo',
-							'children' => POSTER + LOGO_LINK,
+							'children' => POSTER + POSTER_MOBILE + LOGO_LINK,
 						],
 
 
